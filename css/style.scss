@@ -80,3 +80,17 @@ nav {
         width: 50%;
     }
 }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        width: 10%;
+        img{
+            height: 1.3em;
+        }
+    }
+}

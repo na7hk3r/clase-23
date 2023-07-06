@@ -74,4 +74,18 @@ nav ul li {
 }
 .main.right {
   width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+}
+footer .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+}
+footer .icons img {
+  height: 1.3em;
 }/*# sourceMappingURL=style.css.map */
