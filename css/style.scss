@@ -14,6 +14,7 @@ body {
 
 nav {
     align-items: center;
+    background-color: $bg-nav;
     display: flex;
     justify-content: space-between;
     padding: 2rem 6rem;
@@ -21,13 +22,12 @@ nav {
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: $bg-nav;
 
     h3 {
-        font-size: 1.8em;
-        letter-spacing: 1.2px;
-        font-weight: bold;
         cursor: pointer;
+        font-size: 1.8em;
+        font-weight: bold;
+        letter-spacing: 1.2px;
     }
 
     ul {
@@ -36,60 +36,126 @@ nav {
         padding: 0;
 
         li {
-            list-style-type: none;
             cursor: pointer;
+            list-style-type: none;
+            transition: all 0.4s ease-in-out;
+
+            &:hover,
+            &:active {
+                color: $bg-primary;
+            }
         }
     }
 }
 
-.main{
+.main {
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 6rem;
-    &.left{
+    padding: 2rem 6rem;
+
+    &.left {
+        padding: 0;
         text-align: left;
         width: 50%;
-        padding: 0;
     }
-    h2{
+
+    h2 {
         font-family: $font-family-h2;
         font-size: 4em;
+        font-weight: bold;
         letter-spacing: 10px;
         line-height: 70px;
-        font-weight: bold;
-        width: 50%;
+        margin: 0;
         padding: 10px;
+        position: relative;
+        width: 50%;
+
+        &::before {
+            background-color: $bg-primary;
+            content: "";
+            height: 42px;
+            left: -1px;
+            position: absolute;
+            width: 250px;
+            z-index: -1;
+        }
     }
-    p{
+
+    p {
         color: $color-primary;
-        width: 90%;
-        padding: 20px 0;
         line-height: 30px;
+        padding: 20px 0;
+        width: 90%;
     }
-    button{
+
+    button {
         background-color: $bg-primary;
-        width: 8rem;
-        margin-right: 30px;
-        height: 4rem;
-        border: none;
         border-radius: 10px;
+        border: none;
         cursor: pointer;
+        height: 4rem;
+        margin-right: 30px;
+        transition: all 0.4s ease-in-out;
+        width: 8rem;
+
+        &:hover {
+            background-color: $bg-secondary;
+            border: 1px dashed $bg-primary;
+        }
     }
-    &.right{
+
+    &.right {
         width: 50%;
     }
 }
 
-footer{
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+
+    .card {
+        align-items: flex-start;
+        background-color: $bg-secondary;
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        justify-content: space-around;
+        padding: 2rem;
+        width: 30%;
+        z-index: 1;
+
+        h3 {
+            font-size: 1.3em;
+            font-weight: bold;
+            position: relative;
+            &::before {
+                background-color: $bg-primary;
+                content: "";
+                height: 10px;
+                left: -1px;
+                position: absolute;
+                width: 22px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    .icons{
+
+    .icons {
         display: flex;
         justify-content: space-around;
         width: 10%;
-        img{
+
+        img {
             height: 1.3em;
         }
     }
