@@ -12,6 +12,30 @@ body {
     font-family: $font-family-body;
 }
 
+html {
+    height: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: $bg-primary;
+    scrollbar-width: thin;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $bg-secondary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $bg-primary;
+    }
+
+    ::selection {
+        background-color: $bg-primary;
+    }
+}
+
 nav {
     align-items: center;
     background-color: $bg-nav;
@@ -123,7 +147,7 @@ nav {
         display: flex;
         flex-direction: column;
         height: 15rem;
-        justify-content: space-around;
+        justify-content: center;
         padding: 2rem;
         width: 30%;
         z-index: 1;
@@ -132,6 +156,7 @@ nav {
             font-size: 1.3em;
             font-weight: bold;
             position: relative;
+
             &::before {
                 background-color: $bg-primary;
                 content: "";

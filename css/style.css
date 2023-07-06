@@ -10,6 +10,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  height: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: #03faee;
+  scrollbar-width: thin;
+  width: 100%;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #03faee;
+}
+html ::-moz-selection {
+  background-color: #03faee;
+}
+html ::selection {
+  background-color: #03faee;
+}
+
 nav {
   align-items: center;
   background-color: #FFF;
@@ -109,7 +132,7 @@ nav ul li:hover, nav ul li:active {
   display: flex;
   flex-direction: column;
   height: 15rem;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2rem;
   width: 30%;
   z-index: 1;
