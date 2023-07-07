@@ -24,11 +24,11 @@ html {
     }
 
     &::-webkit-scrollbar-track {
-        background: $bg-secondary;
+        background: $scroll-bg;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: $bg-primary;
+        background-color: $scroll1;
     }
 
     ::selection {
@@ -52,6 +52,7 @@ nav {
         font-size: 1.8em;
         font-weight: bold;
         letter-spacing: 1.2px;
+        background-color: $bg-primary;
     }
 
     ul {
