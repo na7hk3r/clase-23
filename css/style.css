@@ -134,7 +134,7 @@ nav ul li:hover, nav ul li:active {
   flex-direction: column;
   height: 15rem;
   justify-content: center;
-  padding: 2rem;
+  padding: 5rem 2rem;
   width: 30%;
   z-index: 1;
 }
@@ -152,6 +152,23 @@ nav ul li:hover, nav ul li:active {
   width: 22px;
   z-index: -1;
 }
+.card-container .card h4 {
+  align-items: center;
+  border: solid 1px #000;
+  border-radius: 50%;
+  box-shadow: -3px 0px 0px 1px #03faee;
+  -webkit-box-shadow: -3px 0px 0px 1px #03faee;
+  -moz-box-shadow: -3px 0px 0px 1px #03faee;
+  display: inline-flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
 
 footer {
   display: flex;
@@ -163,6 +180,19 @@ footer .icons {
   justify-content: space-around;
   width: 10%;
 }
-footer .icons img {
+footer .icons a {
+  align-items: center;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  box-shadow: -3px 0px 0px 1px #03faee;
+  -webkit-box-shadow: -3px 0px 0px 1px #03faee;
+  -moz-box-shadow: -3px 0px 0px 1px #03faee;
+  display: inline-flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  transition: all 0.4s ease-in-out;
+}
+footer .icons a img {
   height: 1.3em;
 }/*# sourceMappingURL=style.css.map */

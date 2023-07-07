@@ -1,0 +1,12 @@
+@mixin bubble($border-color: #000) {
+    align-items: center;
+    border: solid 1px $border-color;
+    border-radius: 50%;
+    box-shadow: -3px 0px 0px 1px $bg-primary;
+    -webkit-box-shadow: -3px 0px 0px 1px $bg-primary;
+    -moz-box-shadow: -3px 0px 0px 1px $bg-primary;
+    display: inline-flex;
+    height: 35px;
+    justify-content: center;
+    width: 35px;
+}
